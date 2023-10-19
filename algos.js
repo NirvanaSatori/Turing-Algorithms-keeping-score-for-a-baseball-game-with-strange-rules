@@ -24,7 +24,6 @@ const calPoints = function(ops)  {
             record.push(double)
         }
         if(ops[i] === "+"){            
-            // let sum = record.reduce((total, x) => total+=x)
             let lastIndex = record.length-1
             let sum = record[lastIndex]+ record[lastIndex-1]
             record.push(sum)

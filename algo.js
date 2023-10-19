@@ -28,9 +28,16 @@ const calPoints = function(ops)  {
             let sum = record[lastIndex]+ record[lastIndex-1]
             record.push(sum)
         }
+        return record
         console.log(record)
     })
-    result = record.reduce((total, string)=>{
+    console.log(newScore)
+    // result = newScore.map(score => {
+    //     score.reduce((total, string)=>{
+    //         return total += string
+    //  }, 0)
+    // })
+    result = newScore[0].reduce((total, string)=>{
            return total += string
     }, 0)
     return result
